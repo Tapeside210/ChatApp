@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <title>ChatApp</title>
+  </head>
+  <body>
+    <header>
+      <h2>Uber Chat</h2>
+    </header>
+
+    <section>
+      <div class="change_username">
+        <input type="text" id="username" placeholder="Enter a username...">
+        <button type="button" id="send_username">Change Alias</button>
+      </div>
+    </section>
+
+    <section id="chatroom">
+      <section id="feedback">
+      </section>
+    </section>
+
+    <section id="input_zone">
+      <input type="text" class="vertical-align" placeholder="Type a message..." id="message">
+      <button type="button" name="vertical-align" id="send_message">Send</button>
+    </section>
+
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="chat.js"></script>
+  </body>
+</html>
